@@ -14,18 +14,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">Web Studio</a>
-        <ul>
-          <li><a href="./index.html" class="current">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+    <header class="page-header">
+      <nav class="page-nav">
+        <a href="./index.html" class="logo link"
+          >Web<span class="accent">Studio</span></a
+        >
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="#contacts" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contacts list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
@@ -144,14 +150,16 @@
 
     <!--Footer-->
     <footer>
-      <a href="#">Web Studio</a>
-      <address>
+      <a href="./index.html" class="logo link"
+        >Web<span class="accent">Studio</span></a
+      >
+      <address id="contacts">
         <ul>
           <li>
             <a
               href="https://goo.gl/maps/FadHfGUnzSmuJpXz6"
               target="_blank"
-              rel="noopenner nofollow noreferrer"
+              rel="noopener nofollow noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
