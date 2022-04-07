@@ -3,6 +3,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --primary-bg-color: #ffffff;
+  --secondary-text-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
 }
@@ -12,9 +13,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+/* -----MAIN----- */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,69 +33,172 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
-/* HEADER */
-.page-header {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-.page-nav {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-.site-nav {
-  display: flex;
-  flex-direction: row;
-  margin: 32px 0 32px 40px;
-  padding: 0;
-}
-.header-contacts {
-  display: flex;
-  flex-direction: row;
-  margin: 32px 0 32px 258px;
-  padding: 0;
-}
-/* logo */
+
+/* -----PAGE-HEADER----- */
+
+/* -----HEADER-LOGO----- */
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin: 24px 0 25px 198px;
-  padding: 0;
 }
-.accent {
+
+.page-header .accent {
   color: #000000;
 }
 
-/* site navigation */
-.site-nav .link,
-.header-contacts .link {
+/* -----site navigation----- */
+
+.site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  margin: 0 0 0 46px;
-  padding: 0;
+}
+.header-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
+.link:focus,
 .link.current {
   color: var(--accent-color);
+}
+
+/* -----HERO----- */
+.hero {
+  background-color: #c4c4c4;
+}
+.hero-title {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+/* -----SKILL-SECTION----- */
+
+.skills-section-list {
+  display: flex;
+  flex-direction: row;
+}
+.skills-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.skills-section-text {
+  line-height: 1.71;
+}
+
+/* -----WORK-SECTION----- */
+.work-section-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.works-section-title,
+.command-section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+/* -----COMMAND----- */
+.command-section-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+.command-section-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* -----FOOTER----- */
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+.page-footer .accent {
+  color: #ffffff;
+}
+.footer-contacts .address {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+.footer-contacts .contact {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----portfolio----- */
+.portfolio-button-list {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-section .button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  margin: 0 8px 0 0;
+}
+.portfolio-section .button:hover,
+.portfolio-section .button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+.portfolio-section-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-section-list .text {
+  font-size: 16px;
+  line-height: 1.88;
 }
