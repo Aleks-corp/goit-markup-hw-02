@@ -105,6 +105,10 @@ body {
   display: block;
   margin: 30px auto 0 auto;
 }
+.hero .button:hover,
+.hero .button:focus {
+  background-color: #188ce8;
+}
 
 /* -----SKILL-SECTION----- */
 
